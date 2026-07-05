@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products & Services — Toastid Tech, LLC</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="assets/logos/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="bg-fx"></div>
+<canvas id="particles"></canvas>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">
+      <div class="brand-mark"><img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield logo"></div>
+      <div class="brand-name">Toastid Tech, LLC<span>Don't Get Left Behind</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products &amp; Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Let's Connect →</a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section style="padding-bottom:0;">
+    <div class="eyebrow reveal in">What We Offer</div>
+    <h1 style="font-size:clamp(2rem,4.4vw,3rem); text-transform:uppercase; margin:14px 0 14px; line-height:1.08;" class="reveal in">Products &amp; Services</h1>
+    <p style="color:var(--muted); max-width:600px; font-size:1rem; line-height:1.6;" class="reveal in">Six AI-native apps built to solve real problems, plus direct consulting if you want a second set of eyes on your business.</p>
+  </section>
+
+  <section id="apps">
+    <div class="section-head">
+      <div><div class="eyebrow">Available Apps</div><h2>Progressive Web Apps</h2></div>
+    </div>
+    <div class="product-grid reveal-stagger reveal">
+
+      <div class="product-card tilt-card">
+        <div class="product-mark"><img src="assets/logos/taichi-logo.png" alt="28-Day Walking Tai Chi logo"></div>
+        <span class="status-tag status-live">Live</span>
+        <h3>28-Day Walking Tai Chi</h3>
+        <p>Build balance, calm, and strength with a guided daily walking practice — one mindful step at a time. Freemium, with a Square-powered unlock.</p>
+        <a href="#" class="product-link">Open App →</a>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="product-mark"><img src="assets/logos/cope-logo.png" alt="Cope logo"></div>
+        <span class="status-tag status-live">Live</span>
+        <h3>Cope</h3>
+        <p>A daily emotional wellness companion — grounding tools, affirmations, a 5-minute reset guide, and a 30-day check-in calendar.</p>
+        <a href="https://square.link/u/NNBRKHBL" class="product-link">Subscribe — $12.99/mo →</a>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="product-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12.5l2.3 2.3L16 9.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="status-tag status-soon">Coming Soon</span>
+        <h3>Micro Tasks</h3>
+        <p>Break big goals into 5-minute rituals. Momentum you can actually keep up with. Pre-order pricing locked in now.</p>
+        <a href="https://square.link/u/BVDAjH0O" class="product-link">Pre-Order — $12.99/mo →</a>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="product-mark"><img src="assets/logos/sopilot-logo.jpg" alt="SOPilot logo"></div>
+        <span class="status-tag status-live">Live</span>
+        <h3>SOPilot</h3>
+        <p>An AI-powered SOP builder that turns how you already work into documentation your team can actually follow.</p>
+        <a href="https://toastidtech.github.io/sopilot/" class="product-link">Open App →</a>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="product-mark"><img src="assets/logos/canvasflow-logo.png" alt="CanvasFlow logo"></div>
+        <span class="status-tag status-live">Live</span>
+        <h3>CanvasFlow</h3>
+        <p>A graphic design PWA for creators who need clean exports fast. 7-day free trial, then a one-time device unlock.</p>
+        <a href="#" class="product-link">Unlock — $29.95 one-time →</a>
+      </div>
+
+      <div class="product-card tilt-card">
+        <div class="product-mark"><img src="assets/logos/pulsematrix-logo.png" alt="Pulse Matrix logo"></div>
+        <span class="status-tag status-soon">Coming Soon</span>
+        <h3>Pulse Matrix</h3>
+        <p>A 7-day multi-platform marketing program that gets your message in front of the right people, fast.</p>
+        <a href="contact.html" class="product-link">Join the Waitlist →</a>
+      </div>
+
+    </div>
+    <p style="color:var(--muted); font-size:0.82rem; margin-top:18px;">Any 2 apps bundled together: <a href="https://square.link/u/wAJSJVTD" style="color:var(--blue-bright); font-weight:600;">$19.99/mo →</a></p>
+  </section>
+
+  <section id="services" style="padding-top:0;">
+    <div class="section-head">
+      <div><div class="eyebrow">Direct Consulting</div><h2>Services</h2></div>
+    </div>
+    <div class="pricing-grid reveal-stagger reveal">
+      <div class="price-card tilt-card">
+        <span class="status-tag status-live">Individuals</span>
+        <h3 style="font-size:1.15rem;">Personal Consultation</h3>
+        <div class="amount">$250 <span>/ 1-hour session</span></div>
+        <ul>
+          <li>One-on-one, 60 minutes</li>
+          <li>Straight answers on where AI actually helps your situation</li>
+          <li>No sales pitch, no upsell pressure</li>
+        </ul>
+        <a href="contact.html" class="cta-btn filled" style="align-self:flex-start; margin-top:8px;">Book a Consultation →</a>
+      </div>
+      <div class="price-card tilt-card">
+        <span class="status-tag status-live">Businesses</span>
+        <h3 style="font-size:1.15rem;">Full Business Audit</h3>
+        <div class="amount">$1,995 <span>/ 1-hour session + report</span></div>
+        <ul>
+          <li>Deep-dive on your current systems and workflows</li>
+          <li>Concrete recommendations, not theory</li>
+          <li>Built from 20+ years of real IT operations experience</li>
+        </ul>
+        <a href="contact.html" class="cta-btn filled" style="align-self:flex-start; margin-top:8px;">Request a Business Audit →</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0; padding-bottom:60px;">
+    <div class="cta-final reveal">
+      <div>
+        <h2>Not sure which one fits?</h2>
+        <p>Tell me what you're trying to solve and I'll point you to the right app or service.</p>
+      </div>
+      <a href="contact.html" class="cta-btn filled">Get In Touch →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Toastid Tech, LLC · info@toastidtech.com · (479) 339-1504 · @ToastidTechLLC · <a href="disclaimer.html" style="color:var(--muted);">Cope Disclaimer</a>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
