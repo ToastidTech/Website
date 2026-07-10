@@ -1,4 +1,4 @@
-const CACHE = 'toastid-v3';
+const CACHE = 'toastid-v4';
 
 const ASSETS = [
 
