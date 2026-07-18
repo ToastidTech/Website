@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /staging/
+Allow: /
+Sitemap: https://toastidtech.github.io/Website/sitemap.xml
