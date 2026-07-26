@@ -4,3 +4,4 @@ Disallow: /private/
 Disallow: /staging/
 Allow: /
 Sitemap: https://toastidtech.github.io/Website/sitemap.xml
+Sitemap: https://toastidtech.com/sitemap.xml
