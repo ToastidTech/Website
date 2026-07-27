@@ -3,4 +3,5 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /staging/
 Allow: /
+
 Sitemap: https://toastidtech.com/sitemap.xml
