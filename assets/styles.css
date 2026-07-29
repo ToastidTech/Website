@@ -418,3 +418,7 @@
   background: transparent;
   cursor: pointer;
 }
+/* Givebutter popup styling */
+.givebutter-popup {
+  z-index: 9999;
+}
