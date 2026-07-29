@@ -442,3 +442,40 @@
 .givebutter-popup {
   z-index: 9999;
 }
+/* existing CSS */
+...
+...
+/* whatever was already at the end */
+
+
+/* Donate Popup */
+#donate-popup {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 320px;
+  padding: 25px;
+  background: #0b0f19;
+  color: white;
+  border: 1px solid #00aaff;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(0,170,255,.5);
+  transform: translateY(150%);
+  transition: transform .4s ease;
+  z-index: 9999;
+}
+
+#donate-popup.show {
+  transform: translateY(0);
+}
+
+#close-donate {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
