@@ -410,25 +410,6 @@
    Givebutter Donation Popup
    ========================= */
 
-.donate-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.75);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
-}
-
-.donate-modal {
-  width: 90%;
-  max-width: 450px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 30px;
-  position: relative;
-}
-
 #close-donate {
   position: absolute;
   right: 15px;
