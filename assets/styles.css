@@ -383,3 +383,38 @@
 @media (max-width:560px){
   .team-grid{ grid-template-columns:1fr; }
 }
+/* All your existing Toastid styles above */
+
+
+/* =========================
+   Givebutter Donation Popup
+   ========================= */
+
+.donate-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.75);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.donate-modal {
+  width: 90%;
+  max-width: 450px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+#close-donate {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
