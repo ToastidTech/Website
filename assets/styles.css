@@ -167,10 +167,30 @@
     border:1px solid rgba(74,158,255,0.22);
     animation:spin 24s linear infinite;
   }
-  .hero-visual .ring-inner::before{
-    content:''; position:absolute; top:-3px; left:50%; width:6px; height:6px; margin-left:-3px;
-    background:var(--blue-bright); border-radius:50%; box-shadow:0 0 10px var(--blue-bright);
+ .hero-visual .ring-inner::before{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:50%;
+  width:6px;
+  height:6px;
+  margin-left:-3px;
+  background:var(--blue-bright);
+  border-radius:50%;
+  box-shadow:0 0 10px var(--blue-bright);
+  animation:pulseDot 2s infinite ease-in-out;
+}
+
+@keyframes pulseDot{
+  0%,100%{
+    transform:scale(1);
+    opacity:1;
   }
+  50%{
+    transform:scale(1.8);
+    opacity:.5;
+  }
+} 
   @keyframes pulse{ 0%,100%{ opacity:0.5; transform:scale(1);} 50%{ opacity:0.9; transform:scale(1.05);} }
   @keyframes spin{ to{ transform:rotate(360deg); } }
   .hero-visual img{
