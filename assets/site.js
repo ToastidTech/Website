@@ -212,3 +212,4 @@ window.addEventListener('load', function () {
 
   }
 });
+alert("site.js loaded");
