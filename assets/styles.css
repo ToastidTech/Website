@@ -410,14 +410,6 @@
    Givebutter Donation Popup
    ========================= */
 
-#close-donate {
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  font-size: 28px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
 }
 /* Givebutter popup styling */
 .givebutter-popup {
