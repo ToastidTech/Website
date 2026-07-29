@@ -186,3 +186,29 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function (err) {
+      console.log('SW registration failed:', err);
+    });
+  });
+}
+
+
+/* ---------- Donate popup ---------- */
+window.addEventListener('load', function () {
+  var popup = document.getElementById('donate-popup');
+  var closeBtn = document.getElementById('close-donate');
+
+  if (popup && closeBtn) {
+
+    setTimeout(function () {
+      popup.classList.add('show');
+    }, 2500);
+
+    closeBtn.addEventListener('click', function () {
+      popup.classList.remove('show');
+    });
+
+  }
+});
