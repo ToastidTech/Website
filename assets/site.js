@@ -186,13 +186,6 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function () {
-    navigator.serviceWorker.register('/sw.js').catch(function (err) {
-      console.log('SW registration failed:', err);
-    });
-  });
-}
 
 
 /* ---------- Donate popup ---------- */
