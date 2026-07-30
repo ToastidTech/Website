@@ -405,30 +405,42 @@
 }
 /* All your existing Toastid styles above */
 
-
-/* =========================
+ /* =========================
    Givebutter Donation Popup
    ========================= */
 
 #donate-popup {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 320px;
-  max-width: calc(100vw - 40px);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .4s ease;
+  z-index: 99999;
+}
+
+#donate-popup.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.donate-modal {
+  position: relative;
+  width: min(90vw, 500px);
+  max-height: 85vh;
+  overflow-y: auto;
   padding: 25px;
   background: #0b0f19;
   color: white;
   border: 1px solid #00aaff;
   border-radius: 16px;
   box-shadow: 0 0 25px rgba(0,170,255,.5);
-  transform: translateY(150%);
-  transition: transform .4s ease;
-  z-index: 99999;
-}
-
-#donate-popup.show {
-  transform: translateY(0);
 }
 
 #close-donate {
