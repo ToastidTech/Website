@@ -40,7 +40,7 @@
 
   /* ambient circuit + glow background, fixed across whole page */
   .bg-fx{
-    position:fixed; inset:0; z-index:0; pointer-events:none;
+    position:fixed; inset:0; z-index:0; pointer-events: auto;
     background-color:var(--bg);
     background-image:
       radial-gradient(circle at 82% 12%, rgba(74,158,255,0.08), transparent 32%),
