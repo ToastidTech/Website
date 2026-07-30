@@ -483,3 +483,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("donate-popup");
+  const closeBtn = document.getElementById("close-donate");
+
+  if (popup) {
+    popup.style.display = "block";
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  }
+});
