@@ -410,23 +410,12 @@
    Givebutter Donation Popup
    ========================= */
 
-}
-/* Givebutter popup styling */
-.givebutter-popup {
-  z-index: 9999;
-}
-/* existing CSS */
-...
-...
-/* whatever was already at the end */
-
-
-/* Donate Popup */
 #donate-popup {
   position: fixed;
   right: 20px;
   bottom: 20px;
   width: 320px;
+  max-width: calc(100vw - 40px);
   padding: 25px;
   background: #0b0f19;
   color: white;
@@ -435,7 +424,7 @@
   box-shadow: 0 0 25px rgba(0,170,255,.5);
   transform: translateY(150%);
   transition: transform .4s ease;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 #donate-popup.show {
@@ -446,9 +435,10 @@
   position: absolute;
   top: 8px;
   right: 12px;
-  background: none;
+  background: transparent;
   border: none;
   color: white;
   font-size: 24px;
   cursor: pointer;
+  z-index: 100000;
 }
