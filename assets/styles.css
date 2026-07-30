@@ -411,7 +411,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(.95);
+
     width: 380px;
     max-width: calc(100vw - 40px);
     background: #fff;
@@ -420,6 +421,16 @@
     text-align: center;
     box-shadow: 0 15px 45px rgba(0,0,0,.3);
     z-index: 999999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease, transform .3s ease;
+}
+
+#donate-popup.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 #close-donate {
