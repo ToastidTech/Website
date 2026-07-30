@@ -411,13 +411,17 @@
 
 #donate-popup {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     width: 360px;
     max-width: calc(100vw - 40px);
+
     background: #fff;
     padding: 25px;
     border-radius: 20px;
+
     z-index: 999999;
     box-shadow: 0 10px 40px rgba(0,0,0,.3);
 }
