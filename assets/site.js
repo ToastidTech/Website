@@ -473,3 +473,13 @@ window.addEventListener('load',function(){
   }
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("donate-popup");
+  const closeBtn = document.getElementById("close-donate");
+
+  if (popup && closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  }
+});
