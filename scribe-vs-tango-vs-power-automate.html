@@ -1,10 +1,320 @@
-<section style="padding-top:30px; padding-bottom:60px; border-top: 1px solid var(--border); margin-top:60px;">
-  <h2>Resource: Automation Tools Comparison</h2>
-  <p>Trying to figure out which automation tool fits your workflow? We break down the differences between three popular platforms:</p>
-  <ul style="margin: 20px 0; padding-left: 20px;">
-    <li><strong>Scribe</strong> — Best for fast documentation and onboarding</li>
-    <li><strong>Tango</strong> — Best for lightweight workflow capture</li>
-    <li><strong>Power Automate</strong> — Best for enterprise-scale automation</li>
-  </ul>
-  <p><a href="scribe-vs-tango-vs-power-automate.html" style="color:var(--blue-bright); font-weight:600;">Read the full comparison →</a></p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scribe vs. Tango vs. Power Automate — Honest Comparison</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Compare Scribe, Tango, and Power Automate. Honest breakdown of features, pricing, and which tool fits your workflow automation needs.">
+<meta property="og:title" content="Scribe vs. Tango vs. Power Automate — Which Tool Is Right?">
+<meta property="og:description" content="Honest comparison of three workflow automation tools. Learn the real differences in features, pricing, and best use cases without the marketing hype.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://toastidtech.com/scribe-vs-tango-vs-power-automate.html">
+<meta property="og:image" content="https://toastidtech.com/assets/logos/shield-logo.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Scribe vs. Tango vs. Power Automate">
+<meta name="twitter:description" content="Which automation tool is right for you? Compare features, pricing, and use cases.">
+<link rel="icon" href="assets/logos/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="canonical" href="https://toastidtech.com/scribe-vs-tango-vs-power-automate.html" />
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJXTN8EDT4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DJXTN8EDT4');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Toastid Tech, LLC",
+  "url": "https://toastidtech.com",
+  "logo": "https://toastidtech.com/assets/logos/shield-logo.jpg",
+  "description": "AI consulting and progressive web app development.",
+  "sameAs": [
+    "https://www.youtube.com/@ToastidTechLLC"
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="bg-fx"></div>
+<canvas id="particles"></canvas>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header>
+  <nav class="wrap">
+    <div class="brand">
+      <div class="brand-mark"><img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield logo"></div>
+      <div class="brand-name">Toastid Tech, LLC<span>Don't Get Left Behind</span></div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products &amp; Services</a>
+      <a href="resources.html">Resource Library</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <a href="contact.html" class="nav-cta">Let's Connect →</a>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="hero" style="padding-bottom:0;">
+    <div class="hero-grid">
+      <div class="reveal in">
+        <div class="eyebrow">Tool Comparison</div>
+        <h1>SCRIBE VS. TANGO<br><span class="accent">VS. POWER AUTOMATE.</span></h1>
+        <p>Trying to pick the right workflow automation tool? Here's an honest breakdown of three popular platforms — features, pricing, and best use cases, without the marketing speak.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="ring-outer"></div>
+        <div class="ring-inner"></div>
+        <img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield">
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-head">
+      <h2>The Quick Take</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
+      <div style="padding: 30px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; backdrop-filter: blur(10px);">
+        <h3 style="margin-top: 0; color: #00D9FF;">Scribe</h3>
+        <p><strong>Best for:</strong> Fast documentation and onboarding</p>
+        <p><strong>Strengths:</strong> Visual workflow capture, instant process documentation, team collaboration</p>
+        <p><strong>Price:</strong> Free to $25/user/month</p>
+      </div>
+      <div style="padding: 30px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; backdrop-filter: blur(10px);">
+        <h3 style="margin-top: 0; color: #FF6B35;">Tango</h3>
+        <p><strong>Best for:</strong> Lightweight workflow capture</p>
+        <p><strong>Strengths:</strong> Simple, intuitive, fast setup, lightweight exports</p>
+        <p><strong>Price:</strong> Free to $20/user/month</p>
+      </div>
+      <div style="padding: 30px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; backdrop-filter: blur(10px);">
+        <h3 style="margin-top: 0;">Power Automate</h3>
+        <p><strong>Best for:</strong> Enterprise-scale automation</p>
+        <p><strong>Strengths:</strong> Powerful automation logic, deep integrations, scalability</p>
+        <p><strong>Price:</strong> $15/user/month (Enterprise pricing available)</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-head">
+      <h2>Feature Breakdown</h2>
+    </div>
+    <div style="overflow-x: auto; margin-bottom: 60px;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+        <thead>
+          <tr style="border-bottom: 2px solid rgba(255, 255, 255, 0.2);">
+            <th style="text-align: left; padding: 15px; font-weight: 600;">Feature</th>
+            <th style="text-align: center; padding: 15px; font-weight: 600;">Scribe</th>
+            <th style="text-align: center; padding: 15px; font-weight: 600;">Tango</th>
+            <th style="text-align: center; padding: 15px; font-weight: 600;">Power Automate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">Visual workflow capture</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">—</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">Automated workflow triggering</td>
+            <td style="text-align: center; padding: 15px;">—</td>
+            <td style="text-align: center; padding: 15px;">—</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">Team collaboration</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">API integrations</td>
+            <td style="text-align: center; padding: 15px;">Limited</td>
+            <td style="text-align: center; padding: 15px;">Limited</td>
+            <td style="text-align: center; padding: 15px;">✓ Extensive</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">Mobile app</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">Export to PDF</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+          </tr>
+          <tr style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+            <td style="padding: 15px;">Custom branding</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+            <td style="text-align: center; padding: 15px;">Limited</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+          </tr>
+          <tr>
+            <td style="padding: 15px;">Enterprise support</td>
+            <td style="text-align: center; padding: 15px;">—</td>
+            <td style="text-align: center; padding: 15px;">—</td>
+            <td style="text-align: center; padding: 15px;">✓</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-head">
+      <h2>Pros &amp; Cons</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+      <div>
+        <h3 style="color: #00D9FF; margin-top: 0;">Scribe</h3>
+        <h4>Pros</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Fast to set up and use</li>
+          <li>Excellent for visual documentation</li>
+          <li>Strong team collaboration features</li>
+          <li>Good free tier to start</li>
+          <li>Integrates with many SaaS tools</li>
+        </ul>
+        <h4>Cons</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Limited automation capabilities</li>
+          <li>Can't execute workflows automatically</li>
+          <li>Primarily for documentation, not workflow execution</li>
+          <li>Pricing adds up with teams</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="color: #FF6B35; margin-top: 0;">Tango</h3>
+        <h4>Pros</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Dead simple to learn</li>
+          <li>Fast capture process</li>
+          <li>Lightweight and responsive</li>
+          <li>Good for remote teams</li>
+          <li>Affordable free plan</li>
+        </ul>
+        <h4>Cons</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Limited customization options</li>
+          <li>No real automation (only documentation)</li>
+          <li>Smaller feature set than competitors</li>
+          <li>Less powerful integrations</li>
+          <li>Smaller community for help</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 style="margin-top: 0;">Power Automate</h3>
+        <h4>Pros</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Actual workflow automation (not just docs)</li>
+          <li>Extensive integration library</li>
+          <li>Powerful logic and conditional flows</li>
+          <li>Enterprise-grade support</li>
+          <li>Scalable for large organizations</li>
+        </ul>
+        <h4>Cons</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Steeper learning curve</li>
+          <li>Overkill for simple documentation</li>
+          <li>Pricing can escalate quickly</li>
+          <li>Requires more setup and configuration</li>
+          <li>Not ideal for quick team capture</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-head">
+      <h2>Use Cases: When to Pick Each</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 30px; margin-bottom: 60px;">
+      <div style="padding: 30px; border: 1px solid rgba(0, 217, 255, 0.2); border-left: 4px solid #00D9FF; border-radius: 8px;">
+        <h3 style="margin-top: 0; color: #00D9FF;">Pick Scribe if you:</h3>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Need to document workflows quickly for training</li>
+          <li>Want a team tool for onboarding and knowledge sharing</li>
+          <li>Need visual process documentation with screenshots</li>
+          <li>Have a small to mid-size team</li>
+          <li>Want affordable pricing with good features</li>
+        </ul>
+      </div>
+
+      <div style="padding: 30px; border: 1px solid rgba(255, 107, 53, 0.2); border-left: 4px solid #FF6B35; border-radius: 8px;">
+        <h3 style="margin-top: 0; color: #FF6B35;">Pick Tango if you:</h3>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Want simplicity above all else</li>
+          <li>Need lightweight, quick workflow capture</li>
+          <li>Are documenting for external clients</li>
+          <li>Prefer minimal learning curve</li>
+          <li>Don't need heavy customization</li>
+        </ul>
+      </div>
+
+      <div style="padding: 30px; border: 1px solid rgba(255, 255, 255, 0.1); border-left: 4px solid rgba(255, 255, 255, 0.5); border-radius: 8px;">
+        <h3 style="margin-top: 0;">Pick Power Automate if you:</h3>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>Need to actually automate workflows (not just document)</li>
+          <li>Work in an enterprise environment with complex needs</li>
+          <li>Already use Microsoft 365 or Azure</li>
+          <li>Need deep integrations with business tools</li>
+          <li>Require conditional logic and advanced automation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="section-head">
+      <h2>The Bottom Line</h2>
+    </div>
+    <div style="padding: 40px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 60px;">
+      <p><strong>Scribe and Tango</strong> are documentation and capture tools. They're excellent for recording how work gets done and sharing that knowledge — but they don't actually execute workflows automatically.</p>
+      <p><strong>Power Automate</strong> is a true automation platform. It can trigger actions, move data between systems, and execute workflows without human intervention.</p>
+      <p style="margin-bottom: 0;"><strong>So pick based on what you actually need:</strong> If you need to document a process, go Scribe or Tango. If you need to automate it, go Power Automate.</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="cta-final reveal">
+      <div>
+        <h2>Still not sure which tool fits?</h2>
+        <p>Let's talk about your specific workflow or automation challenge. I'll give you a straight answer on which tool — if any — is worth the investment.</p>
+      </div>
+      <a href="contact.html" class="cta-btn filled">Book a Consultation →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer style="margin-top: 60px; padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; font-size: 14px; color: rgba(255, 255, 255, 0.6);">
+  <p>&copy; 2026 Toastid Tech, LLC. All rights reserved.</p>
+</footer>
+
+<script src="assets/scripts.js"></script>
+
+</body>
+</html>
