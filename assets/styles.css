@@ -296,12 +296,13 @@
     border-radius:16px;
     padding:36px 38px;
     display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;
-  }
+{
   .cta-final::after{
-    content:''; position:absolute; width:260px; height:260px; border-radius:50%;
-    background:radial-gradient(circle, rgba(74,158,255,0.16), transparent 70%);
-    right:-80px; top:-100px; filter:blur(8px);
-  }
+  content:''; position:absolute; width:260px; height:260px; border-radius:50%;
+  background:radial-gradient(circle, rgba(74,158,255,0.16), transparent 70%);
+  right:-80px; top:-100px; filter:blur(8px);
+  pointer-events:none;   /* ← add this */
+}
   .cta-final h2{ font-size:1.4rem; margin-bottom:4px; position:relative; }
   .cta-final p{ color:var(--muted); font-size:0.9rem; position:relative; }
 
