@@ -3,142 +3,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resource Library — Toastid Tech</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#000000">
-<meta name="description" content="AI guides, tool comparisons, and automation resources from Toastid Tech. Honest analysis of Scribe, Tango, Power Automate, and more.">
-<meta property="og:title" content="Resource Library — Toastid Tech">
-<meta property="og:description" content="AI guides, tool comparisons, and automation resources. Compare Scribe vs Tango vs Power Automate.">
+<title>Resources & Blog — Toastid Tech</title>
+<meta name="description" content="Practical guides on Progressive Web Apps, business audits, AI, and business automation from Toastid Tech. Straight answers, useful strategies, and no fluff.">
+<meta property="og:title" content="Resources & Blog — Toastid Tech">
+<meta property="og:description" content="Practical PWA, business audit, AI, and automation guidance for small businesses and solopreneurs.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://toastidtech.com/resources.html">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://toastidtech.com/resources.html">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="assets/logos/icon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
-<link rel="canonical" href="https://toastidtech.com/resources.html" />
-
-  <!-- Google tag (gtag.js) -->
+<style>
+.resource-filter{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px;}
+.resource-filter button{font:inherit;color:rgba(255,255,255,.75);background:rgba(255,255,255,.035);border:1px solid rgba(90,169,255,.22);border-radius:999px;padding:9px 15px;cursor:pointer;transition:.2s ease;}
+.resource-filter button:hover,.resource-filter button.active{color:#fff;border-color:#5aa9ff;background:rgba(27,117,208,.16);box-shadow:0 0 14px rgba(30,136,229,.16);}
+.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+.blog-card{display:flex;flex-direction:column;min-height:100%;}
+.blog-card .product-mark{display:flex;align-items:center;justify-content:center;font-size:28px;}
+.blog-card .blog-category{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7bbcff;margin-top:18px;}
+.blog-card h3{margin:7px 0 10px;}
+.blog-card p{flex:1;}
+.blog-card .read-link{margin-top:18px;}
+.article-stack{display:grid;gap:18px;margin-top:34px;}
+.blog-article{padding:28px;border:1px solid rgba(90,169,255,.16);border-radius:16px;background:rgba(255,255,255,.025);scroll-margin-top:100px;}
+.blog-article[hidden]{display:none;}
+.blog-article .article-kicker{font-family:'JetBrains Mono',monospace;color:#7bbcff;font-size:11px;text-transform:uppercase;letter-spacing:.08em;}
+.blog-article h2{margin:7px 0 12px;}
+.blog-article h3{margin:22px 0 8px;font-size:18px;}
+.blog-article p,.blog-article li{color:rgba(255,255,255,.72);line-height:1.75;}
+.blog-article ul{padding-left:20px;}
+@media(max-width:900px){.blog-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:620px){.blog-grid{grid-template-columns:1fr;}.blog-article{padding:22px;}}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJXTN8EDT4"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-DJXTN8EDT4');
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-DJXTN8EDT4');
 </script>
-
 </head>
 <body>
-
-<div class="bg-fx"></div>
-<canvas id="particles"></canvas>
-<div class="cursor-glow" id="cursorGlow"></div>
-
-<header>
-  <nav class="wrap">
-    <div class="brand">
-      <div class="brand-mark"><img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield logo"></div>
-      <div class="brand-name">Toastid Tech, LLC<span>Don't Get Left Behind</span></div>
-    </div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="products.html">Products &amp; Services</a>
-      <a href="resources.html" class="active">Resource Library</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-    </div>
-    <a href="contact.html" class="nav-cta">Let's Connect →</a>
-    <button class="menu-toggle" aria-label="Menu">☰</button>
-  </nav>
-</header>
-
+<div class="bg-fx"></div><canvas id="particles"></canvas><div class="cursor-glow" id="cursorGlow"></div>
+<header><nav class="wrap">
+<div class="brand"><div class="brand-mark"><img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield logo"></div><div class="brand-name">Toastid Tech, LLC<span>Don't Get Left Behind</span></div></div>
+<div class="nav-links"><a href="index.html">Home</a><a href="products.html">Products &amp; Services</a><a href="resources.html" class="active">Resources &amp; Blog</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div>
+<a href="contact.html" class="nav-cta">Let's Connect →</a><button class="menu-toggle" aria-label="Menu">☰</button>
+</nav></header>
 <main class="wrap">
-
-  <section class="hero" style="padding-bottom:0;">
-    <div class="hero-grid">
-      <div class="reveal in">
-        <div class="eyebrow">Learn &amp; Compare</div>
-        <h1>THE RESOURCE<br><span class="accent">LIBRARY.</span></h1>
-        <p>Honest comparisons, AI insights, and automation guides. No fluff, no affiliate links — just straight analysis to help you pick the right tool.</p>
-      </div>
-      <div class="hero-visual">
-        <div class="ring-outer"></div>
-        <div class="ring-inner"></div>
-        <img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield">
-      </div>
-    </div>
-  </section>
-
-  <section id="resources" style="padding-top:0;">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">What's Available</div>
-        <h2>Guides &amp; Comparisons.</h2>
-      </div>
-    </div>
-<section style="padding-top:0;">
-    <div class="section-head">
-      <h3>Need Automation Guidance?</h3>
-      <p>Our tool comparison is currently being upgraded — reach out and we'll help you sort it out directly.</p>
-      <a href="contact.html" class="cta-btn">Contact Us →</a>
-    </div>
+<section class="hero" style="padding-bottom:0;">
+<div class="hero-grid"><div class="reveal in"><div class="eyebrow">Resources · Insights · Straight Answers</div><h1>THE RESOURCE<br><span class="accent">LIBRARY.</span></h1><p>Practical guidance for owners who want better technology, smarter operations, and less wasted time. PWA development, business audits, AI, and automation without the corporate fog machine.</p></div><div class="hero-visual"><div class="ring-outer"></div><div class="ring-inner"></div><img src="assets/logos/shield-logo.jpg" alt="Toastid Tech shield"></div></div>
 </section>
-    <div class="product-grid reveal-stagger reveal">
-
-      <div class="product-card tilt-card">
-        <div class="product-mark" style="background: linear-gradient(135deg, #00D9FF 0%, #FF6B35 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px;">⚖️</div>
-        <span class="product-tag">Upgrading</span>
-        <h3>Scribe vs. Tango vs. Power Automate</h3>
-        <p>Currently being upgraded. In the meantime, reach out directly and we'll walk you through the differences.</p>
-        <a href="contact.html" class="product-link">Contact Us →</a>
-      </div>
-
-      <div class="product-card tilt-card">
-        <div class="product-mark" style="background: linear-gradient(135deg, #FF6B35 0%, #00D9FF 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px;">📚</div>
-        <span class="product-tag">Coming Soon</span>
-        <h3>AI for Small Business Owners</h3>
-        <p>What actually works. A no-BS guide to where AI can save you time and where it's just hype. Real examples from real businesses.</p>
-        <a href="#" class="product-link">Coming Soon →</a>
-      </div>
-
-      <div class="product-card tilt-card">
-        <div class="product-mark" style="background: linear-gradient(135deg, #00D9FF 0%, #FF6B35 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px;">🔧</div>
-        <span class="product-tag">Coming Soon</span>
-        <h3>Building Automation Workflows</h3>
-        <p>Step-by-step. From choosing the right tool to setting up your first automation. Practical, proven strategies that actually work.</p>
-        <a href="#" class="product-link">Coming Soon →</a>
-      </div>
-
-      <div class="product-card tilt-card">
-        <div class="product-mark" style="background: linear-gradient(135deg, #FF6B35 0%, #00D9FF 100%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px;">💡</div>
-        <span class="product-tag">Coming Soon</span>
-        <h3>AI Updates &amp; Trends</h3>
-        <p>What's shipping. Quick takes on new AI tools, updates, and what actually matters for your business. Skip the noise.</p>
-        <a href="#" class="product-link">Coming Soon →</a>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section style="padding-top:0;">
-    <div class="cta-final reveal">
-      <div>
-        <h2>Need custom guidance?</h2>
-        <p>Let's talk about your specific automation or AI challenge. I'll give you a straight answer on what's worth building.</p>
-      </div>
-      <a href="contact.html" class="cta-btn filled">Book a Consultation →</a>
-    </div>
-  </section>
-
+<section id="resources" style="padding-top:0;">
+<div class="section-head"><div><div class="eyebrow">The Blog</div><h2>Useful stuff. Actually.</h2></div></div>
+<div class="resource-filter" role="tablist" aria-label="Filter resources">
+<button class="active" data-filter="all">All</button><button data-filter="pwa">PWAs</button><button data-filter="audit">Business Audits</button><button data-filter="automation">Automation</button><button data-filter="ai">AI &amp; Strategy</button>
+</div>
+<div class="blog-grid reveal-stagger reveal">
+<article class="product-card tilt-card blog-card" data-category="pwa"><div class="product-mark">📱</div><div class="blog-category">PWAs</div><h3>Why Progressive Web Apps Are Quietly Winning</h3><p>Why a good PWA can give a small business an app-like experience without the app-store circus.</p><a class="product-link read-link" href="#pwa-winning">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="pwa"><div class="product-mark">🚀</div><div class="blog-category">PWAs</div><h3>When Should Your Business Build a PWA?</h3><p>A practical checklist for deciding whether a PWA solves a real problem or is just another shiny object.</p><a class="product-link read-link" href="#pwa-checklist">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="pwa"><div class="product-mark">🧩</div><div class="blog-category">PWAs</div><h3>From Idea to Installable App</h3><p>The basic anatomy of a PWA and what actually has to happen between an idea and a useful product.</p><a class="product-link read-link" href="#pwa-build">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="audit"><div class="product-mark">🔍</div><div class="blog-category">Business Audits</div><h3>What a Business Audit Should Really Find</h3><p>A technology audit should expose bottlenecks, wasted effort, risk, and opportunities, not produce a 70-page dust collector.</p><a class="product-link read-link" href="#audit-findings">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="audit"><div class="product-mark">📊</div><div class="blog-category">Business Audits</div><h3>The 5 Areas I Look at First</h3><p>People, process, technology, data, and customer experience. Here is where the useful clues usually hide.</p><a class="product-link read-link" href="#audit-five">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="automation"><div class="product-mark">⚙️</div><div class="blog-category">Automation</div><h3>Stop Automating Broken Processes</h3><p>Automation can turn a bad process into a faster bad process. Fix the workflow before you wire it to a robot.</p><a class="product-link read-link" href="#automation-broken">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="automation"><div class="product-mark">🔗</div><div class="blog-category">Automation</div><h3>What Should You Automate First?</h3><p>Start with repetitive, rules-based work that steals time every week and rarely deserves human judgment.</p><a class="product-link read-link" href="#automation-first">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="ai"><div class="product-mark">🧠</div><div class="blog-category">AI &amp; Strategy</div><h3>AI for Small Business Without the Hype</h3><p>Where AI can genuinely create leverage, where it cannot, and how to avoid paying for technology nobody uses.</p><a class="product-link read-link" href="#ai-hype">Read Article →</a></article>
+<article class="product-card tilt-card blog-card" data-category="ai"><div class="product-mark">💡</div><div class="blog-category">AI &amp; Strategy</div><h3>Build, Buy, or Automate?</h3><p>A simple decision framework for choosing between an existing tool, a custom PWA, or an automated workflow.</p><a class="product-link read-link" href="#build-buy">Read Article →</a></article>
+</div>
+<div class="article-stack">
+<article class="blog-article" id="pwa-winning"><div class="article-kicker">PWAs · 01</div><h2>Why Progressive Web Apps Are Quietly Winning</h2><p>A Progressive Web App sits in the sweet spot between a traditional website and a native mobile app. It can be installed on a device, work across modern browsers, load quickly, and provide an app-like experience without requiring a customer to hunt through an app store.</p><h3>The business advantage</h3><p>For many small businesses, the goal is not "build an app." The goal is "make this task easier for customers." A PWA can accomplish that with less friction and a single web codebase. That can mean faster iteration, simpler distribution, and fewer barriers between a customer and the tool they need.</p><h3>When it makes sense</h3><ul><li>You need a focused tool rather than a giant platform.</li><li>Customers or employees need frequent access from phones or desktops.</li><li>You want to ship updates without waiting for app-store review cycles.</li><li>You care about keeping development and maintenance practical.</li></ul><p>The important part is not the acronym. It is whether the product removes friction. If it does, the technology is doing its job.</p></article>
+<article class="blog-article" id="pwa-checklist"><div class="article-kicker">PWAs · 02</div><h2>When Should Your Business Build a PWA?</h2><p>Before writing code, ask what the user is trying to accomplish. A PWA is a strong candidate when the workflow is focused, repeatable, and valuable enough that people will return to it.</p><h3>Good candidates</h3><ul><li>Internal calculators, checklists, dashboards, and field tools.</li><li>Customer portals and lightweight self-service experiences.</li><li>Habit, wellness, productivity, or tracking applications.</li><li>Specialized tools that do one thing extremely well.</li></ul><h3>Probably not a PWA problem</h3><p>If your product requires deep device integrations, advanced graphics, or platform-specific capabilities that the web cannot reliably provide, a native app may be the better fit. The answer should follow the problem, not the developer's favorite hammer.</p></article>
+<article class="blog-article" id="pwa-build"><div class="article-kicker">PWAs · 03</div><h2>From Idea to Installable App</h2><p>A useful PWA typically needs four building blocks: a responsive interface, a web app manifest, service-worker capabilities where appropriate, and a reliable deployment setup. Then comes the part people skip: testing the actual workflow on the devices people will use.</p><h3>The product loop</h3><p>Start with one painful workflow. Build the smallest useful version. Put it in front of real users. Watch where they hesitate. Fix those points. Then add features based on evidence rather than imagination.</p><p>That approach keeps a small app small enough to maintain while still giving it room to grow. The best first release is rarely the biggest one. It is the one people actually use.</p></article>
+<article class="blog-article" id="audit-findings"><div class="article-kicker">Business Audits · 01</div><h2>What a Business Audit Should Really Find</h2><p>A useful business technology audit should answer three questions: Where are you losing time? Where are you taking unnecessary risk? Where is technology leaving money or capacity on the table?</p><h3>Look for friction</h3><p>Repeated data entry, spreadsheet gymnastics, unclear ownership, manual reporting, duplicate systems, disconnected customer information, and processes that depend on one person's memory are all signals.</p><h3>Turn findings into action</h3><p>Every finding should lead toward a decision: keep it, simplify it, automate it, replace it, or eliminate it. If an audit cannot tell you what to do next, it is analysis without a steering wheel.</p></article>
+<article class="blog-article" id="audit-five"><div class="article-kicker">Business Audits · 02</div><h2>The 5 Areas I Look at First</h2><p>When evaluating a business, I start broad enough to see the system but narrow enough to find actionable problems.</p><ul><li><strong>People:</strong> Who does the work, and where are they overloaded?</li><li><strong>Process:</strong> What steps happen repeatedly, and where do handoffs break?</li><li><strong>Technology:</strong> Which tools help, which tools duplicate each other, and which are barely used?</li><li><strong>Data:</strong> Where does important information live, and can people trust it?</li><li><strong>Customer experience:</strong> Where does the customer encounter unnecessary friction?</li></ul><p>These five areas tend to expose the difference between a business that is merely busy and one that is building scalable operations.</p></article>
+<article class="blog-article" id="automation-broken"><div class="article-kicker">Automation · 01</div><h2>Stop Automating Broken Processes</h2><p>If a workflow is confusing when a human performs it, automating it usually makes the confusion happen faster. Before choosing a tool, document the current process from trigger to outcome.</p><h3>Fix first</h3><p>Remove unnecessary approvals. Eliminate duplicate entry. Define who owns each step. Decide what information is actually required. Then identify the repetitive pieces that remain.</p><p>Automation should reduce decisions, clicks, waiting, and handoffs. If it adds another dashboard for employees to babysit, you may have created a new problem wearing a productivity costume.</p></article>
+<article class="blog-article" id="automation-first"><div class="article-kicker">Automation · 02</div><h2>What Should You Automate First?</h2><p>Start with work that is frequent, predictable, rules-based, and annoying. Those characteristics create a strong return because the automation runs often and requires little judgment.</p><h3>Great first targets</h3><ul><li>Moving information between systems.</li><li>Generating routine reports or notifications.</li><li>Sorting incoming requests into known categories.</li><li>Creating repetitive documents from structured data.</li><li>Scheduling reminders and follow-ups.</li></ul><p>Track the hours saved, errors avoided, and response time improved. If you cannot measure the improvement, you will have a harder time deciding what to automate next.</p></article>
+<article class="blog-article" id="ai-hype"><div class="article-kicker">AI &amp; Strategy · 01</div><h2>AI for Small Business Without the Hype</h2><p>AI is most useful when it removes a bottleneck. That might mean summarizing information, drafting repetitive content, classifying requests, extracting data, helping employees find answers, or assisting with a workflow that previously required several manual steps.</p><h3>Start with the work</h3><p>Do not begin by asking, "Where can I put AI?" Begin by asking, "What takes too much time, happens too often, or requires more manual effort than it should?" Then evaluate whether AI is actually the right tool.</p><p>Sometimes the answer is AI. Sometimes it is a simple automation. Sometimes the answer is deleting the process entirely. Good strategy is knowing the difference.</p></article>
+<article class="blog-article" id="build-buy"><div class="article-kicker">AI &amp; Strategy · 02</div><h2>Build, Buy, or Automate?</h2><p>There are three common paths when a business has a technology problem. Buy an existing product, automate an existing workflow, or build something custom.</p><h3>Buy when</h3><p>The problem is common, mature products already solve it, and customization is not central to your competitive advantage.</p><h3>Automate when</h3><p>You already have the right tools but people are repeatedly moving information, triggering actions, or producing predictable outputs by hand.</p><h3>Build when</h3><p>The workflow is specific to your business, existing tools create more friction than they remove, or the solution itself can become a valuable product.</p><p>The cheapest option is not always the least expensive. Total cost includes subscriptions, labor, errors, maintenance, and the cost of making people work around a bad system.</p></article>
+</div>
+</section>
+<section style="padding-top:0;"><div class="cta-final reveal"><div><h2>Have a problem worth solving?</h2><p>Bring the workflow, bottleneck, or half-baked idea. We'll figure out whether the answer is a PWA, automation, AI, or simply a better process.</p></div><a href="contact.html" class="cta-btn filled">Talk to Toastid Tech →</a></div></section>
 </main>
-
-<footer style="margin-top: 60px; padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.1); text-align: center; font-size: 14px; color: rgba(255, 255, 255, 0.6);">
-  <p>&copy; 2026 Toastid Tech, LLC. All rights reserved.</p>
-</footer>
-
-<script src="assets/scripts.js"></script>
-
+<footer><div class="wrap"><p>&copy; 2026 Toastid Tech, LLC. All rights reserved.</p></div></footer>
+<script src="assets/site.js"></script>
+<script>
+document.querySelectorAll('.resource-filter button').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.resource-filter button').forEach(b=>b.classList.remove('active'));button.classList.add('active');const filter=button.dataset.filter;document.querySelectorAll('.blog-card').forEach(card=>{card.style.display=filter==='all'||card.dataset.category===filter?'flex':'none';});}));
+</script>
 </body>
 </html>
