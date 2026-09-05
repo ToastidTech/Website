@@ -222,7 +222,6 @@
 
       });
 
-
     });
 
   }
@@ -388,14 +387,16 @@
 
   if(menuToggle && navLinks){
 
+    navLinks.id = navLinks.id || 'primary-navigation';
+    menuToggle.setAttribute('aria-controls', navLinks.id);
+    menuToggle.setAttribute('aria-expanded', navLinks.classList.contains('open') ? 'true' : 'false');
+
     menuToggle.addEventListener('click',function(){
 
-      navLinks.classList.toggle('open');
-
-      menuToggle.textContent =
-      navLinks.classList.contains('open')
-      ? '✕'
-      : '☰';
+      var isOpen = navLinks.classList.toggle('open');
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
 
     });
 
@@ -406,8 +407,9 @@
       link.addEventListener('click',function(){
 
         navLinks.classList.remove('open');
-
         menuToggle.textContent='☰';
+        menuToggle.setAttribute('aria-expanded','false');
+        menuToggle.setAttribute('aria-label','Open menu');
 
       });
 
@@ -416,6 +418,163 @@
   }
 
 
+
+  /* ---------- Accessibility + SEO foundation ---------- */
+
+  document.documentElement.classList.toggle('reduce-motion', reduceMotion);
+
+  ['bg-fx','particles','cursorGlow'].forEach(function(id){
+    var decorative=document.getElementById(id);
+    if(decorative) decorative.setAttribute('aria-hidden','true');
+  });
+
+  var main=document.querySelector('main');
+  if(main){
+    main.id=main.id || 'main-content';
+    var skip=document.createElement('a');
+    skip.className='skip-link';
+    skip.href='#'+main.id;
+    skip.textContent='Skip to main content';
+    document.body.insertBefore(skip, document.body.firstChild);
+  }
+
+  var style=document.createElement('style');
+  style.textContent='\n    .skip-link{position:fixed;left:12px;top:12px;z-index:1000;padding:10px 14px;background:#fff;color:#000;border-radius:6px;font-weight:700;transform:translateY(-160%);transition:transform .15s ease}.skip-link:focus{transform:translateY(0);outline:3px solid #4A9EFF;outline-offset:2px}\n    :focus-visible{outline:3px solid #4A9EFF;outline-offset:3px}\n    .reduce-motion *, .reduce-motion *::before, .reduce-motion *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}\n    .nav-links a:focus-visible,.nav-cta:focus-visible,.cta-btn:focus-visible,.product-link:focus-visible,.menu-toggle:focus-visible{border-radius:5px}\n  ';
+  document.head.appendChild(style);
+
+  /* Give navigation controls a meaningful accessible name/state. */
+  if(menuToggle){
+    menuToggle.setAttribute('type','button');
+    menuToggle.setAttribute('aria-label', navLinks && navLinks.classList.contains('open') ? 'Close menu' : 'Open menu');
+  }
+
+  /* The resource filters behave as tabs. Expose their state to assistive technology. */
+  var filterButtons=document.querySelectorAll('.resource-filter button');
+  if(filterButtons.length){
+    filterButtons.forEach(function(button){
+      button.setAttribute('role','tab');
+      button.setAttribute('aria-selected',button.classList.contains('active') ? 'true' : 'false');
+      button.setAttribute('tabindex',button.classList.contains('active') ? '0' : '-1');
+      button.addEventListener('click',function(){
+        filterButtons.forEach(function(b){
+          b.setAttribute('aria-selected','false');
+          b.setAttribute('tabindex','-1');
+        });
+        button.setAttribute('aria-selected','true');
+        button.setAttribute('tabindex','0');
+      });
+    });
+  }
+
+  /* Add useful form autocomplete hints without changing the form's behavior. */
+  var nameInput=document.getElementById('name');
+  var emailInput=document.getElementById('email');
+  if(nameInput) nameInput.setAttribute('autocomplete','name');
+  if(emailInput) emailInput.setAttribute('autocomplete','email');
+
+  /* Make contact details actionable for keyboard and mobile users. */
+  document.querySelectorAll('.contact-info-card .row').forEach(function(row){
+    var text=(row.textContent||'').trim();
+    var span=row.querySelector('span');
+    if(!span || span.querySelector('a')) return;
+    if(/^info@toastidtech\.com$/i.test(text)){
+      span.innerHTML='<a href="mailto:info@toastidtech.com">info@toastidtech.com</a>';
+    }else if(/^\(479\) 339-1504$/.test(text)){
+      span.innerHTML='<a href="tel:+14793391504">(479) 339-1504</a>';
+    }
+  });
+
+  /* ---------- Structured data ---------- */
+  var path=window.location.pathname.replace(/\/+$/,'') || '/';
+  var pageData={
+    '/':{title:'Toastid Tech, LLC | AI Consulting & PWA Development',description:'AI consulting, custom Progressive Web App development, business automation, and practical technology solutions for small businesses and solopreneurs.'},
+    '/index.html':{title:'Toastid Tech, LLC | AI Consulting & PWA Development',description:'AI consulting, custom Progressive Web App development, business automation, and practical technology solutions for small businesses and solopreneurs.'},
+    '/products.html':{title:'Products & Services | Toastid Tech',description:"Explore Toastid Tech's AI-powered apps, Progressive Web Apps, business automation tools, and technology consulting services."},
+    '/resources.html':{title:'Resources & Blog | PWA, AI & Business Automation | Toastid Tech',description:'Practical guides about Progressive Web Apps, business audits, AI strategy, and business automation for small businesses and solopreneurs.'},
+    '/about.html':{title:'About Toastid Tech | AI & Technology Consulting',description:'Learn about Toastid Tech, a founder-built technology company focused on AI consulting, PWA development, automation, and practical digital solutions.'},
+    '/contact.html':{title:'Contact Toastid Tech | AI Consulting & App Development',description:'Talk with Toastid Tech about AI consulting, custom PWA development, business audits, automation, or your next digital product.'},
+    '/disclaimer.html':{title:'Cope Disclaimer | Toastid Tech',description:'Important information and limitations for the Cope emotional wellness app.'},
+    '/scribe-vs-tango-vs-power-automate.html':{title:'Scribe vs. Tango vs. Power Automate | Honest Comparison',description:'Compare Scribe, Tango, and Power Automate across workflow documentation, automation, integrations, pricing, and use cases.'}
+  };
+  var data=pageData[path] || pageData[path.replace(/\.html$/,'')];
+  var absoluteUrl='https://toastidtech.com'+(path==='/'?'/':path);
+
+  function upsertMeta(attr,name,content){
+    if(!content) return;
+    var selector='meta['+attr+'="'+name+'"]';
+    var el=document.head.querySelector(selector);
+    if(!el){
+      el=document.createElement('meta');
+      el.setAttribute(attr,name);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('content',content);
+  }
+  function upsertLink(rel,href){
+    var el=document.head.querySelector('link[rel="'+rel+'"]');
+    if(!el){
+      el=document.createElement('link');
+      el.setAttribute('rel',rel);
+      document.head.appendChild(el);
+    }
+    el.setAttribute('href',href);
+  }
+
+  if(data){
+    document.title=data.title;
+    upsertMeta('name','description',data.description);
+  }
+  upsertMeta('name','robots','index, follow, max-image-preview:large');
+  upsertMeta('name','author','Toastid Tech, LLC');
+  upsertLink('canonical',absoluteUrl);
+  upsertMeta('property','og:title',data ? data.title : document.title);
+  upsertMeta('property','og:description',data ? data.description : 'Toastid Tech builds practical AI-powered tools, Progressive Web Apps, and business automation solutions.');
+  upsertMeta('property','og:type',path==='/resources.html' || path==='/scribe-vs-tango-vs-power-automate.html' ? 'article' : 'website');
+  upsertMeta('property','og:url',absoluteUrl);
+  upsertMeta('property','og:site_name','Toastid Tech, LLC');
+  upsertMeta('property','og:image','https://toastidtech.com/assets/logos/shield-logo.jpg');
+  upsertMeta('name','twitter:card','summary_large_image');
+  upsertMeta('name','twitter:title',data ? data.title : document.title);
+  upsertMeta('name','twitter:description',data ? data.description : 'Practical AI consulting, PWA development, and business automation from Toastid Tech.');
+  upsertMeta('name','twitter:image','https://toastidtech.com/assets/logos/shield-logo.jpg');
+
+  var existingSchema=document.getElementById('toastid-schema');
+  if(!existingSchema){
+    var schema=document.createElement('script');
+    schema.type='application/ld+json';
+    schema.id='toastid-schema';
+    var graph=[
+      {'@type':'Organization','@id':'https://toastidtech.com/#organization','name':'Toastid Tech, LLC','url':'https://toastidtech.com/','logo':{'@type':'ImageObject','url':'https://toastidtech.com/assets/logos/shield-logo.jpg'},'description':'AI consulting, Progressive Web App development, business automation, and practical technology solutions for small businesses and solopreneurs.','email':'info@toastidtech.com','telephone':'+1-479-339-1504','sameAs':['https://www.youtube.com/@ToastidTechLLC']},
+      {'@type':'WebSite','@id':'https://toastidtech.com/#website','url':'https://toastidtech.com/','name':'Toastid Tech, LLC','publisher':{'@id':'https://toastidtech.com/#organization'}},
+      {'@type':'BreadcrumbList','@id':absoluteUrl+'#breadcrumb','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':'https://toastidtech.com/'}]}
+    ];
+    if(path==='/products.html'){
+      graph.push({'@type':'ItemList','name':'Toastid Tech Products & Services','itemListElement':[
+        {'@type':'ListItem','position':1,'name':'Cope','url':'https://toastidtech.github.io/Cope/'},
+        {'@type':'ListItem','position':2,'name':'BiteFact','url':'https://toastidtech.github.io/BiteFact/'},
+        {'@type':'ListItem','position':3,'name':'28-Day Walking Tai Chi','url':'https://toastidtech.github.io/28-Day-Tai-Chi-Walking/'},
+        {'@type':'ListItem','position':4,'name':'Micro Habits','url':'https://toastidtech.github.io/micro-habits/'},
+        {'@type':'ListItem','position':5,'name':'CanvasFlow','url':'https://toastidtech.github.io/CanvasFlow/'},
+        {'@type':'ListItem','position':6,'name':'SOPilot','url':'https://toastidtech.com/products.html#apps'},
+        {'@type':'ListItem','position':7,'name':'Pulse Matrix','url':'https://toastidtech.com/products.html#apps'}
+      ]});
+      graph.push({'@type':'Service','name':'AI Consulting and Business Technology Audits','provider':{'@id':'https://toastidtech.com/#organization'},'serviceType':'AI consulting, business technology audits, workflow automation, and PWA development','areaServed':'Worldwide'});
+    }
+    if(path==='/resources.html'){
+      graph.push({'@type':'Blog','name':'Toastid Tech Resources & Blog','url':absoluteUrl,'publisher':{'@id':'https://toastidtech.com/#organization'}});
+    }
+    if(path==='/scribe-vs-tango-vs-power-automate.html'){
+      graph.push({'@type':'Article','headline':'Scribe vs. Tango vs. Power Automate | Honest Comparison','description':data.description,'url':absoluteUrl,'mainEntityOfPage':absoluteUrl,'author':{'@id':'https://toastidtech.com/#organization'},'publisher':{'@id':'https://toastidtech.com/#organization'},'image':'https://toastidtech.com/assets/logos/shield-logo.jpg'});
+    }
+    if(path==='/about.html'){
+      graph.push({'@type':'AboutPage','name':'About Toastid Tech','url':absoluteUrl,'mainEntity':{'@id':'https://toastidtech.com/#organization'}});
+    }
+    if(path==='/contact.html'){
+      graph.push({'@type':'ContactPage','name':'Contact Toastid Tech','url':absoluteUrl,'mainEntity':{'@id':'https://toastidtech.com/#organization'}});
+    }
+    schema.textContent=JSON.stringify({'@context':'https://schema.org','@graph':graph});
+    document.head.appendChild(schema);
+  }
 
 })();
 
