@@ -1,0 +1,35 @@
+{
+  "site": {
+    "name": "Toastid Tech, LLC",
+    "url": "https://toastidtech.com",
+    "tagline": "Don't Get Left Behind",
+    "default_description": "Toastid Tech builds AI-powered Progressive Web Apps, business automation solutions, and practical AI consulting for small businesses and solopreneurs."
+  },
+  "pages": {
+    "/": {
+      "title": "Toastid Tech, LLC | AI Consulting & PWA Development",
+      "description": "AI consulting, custom Progressive Web App development, business automation, and practical technology solutions for small businesses and solopreneurs.",
+      "keywords": ["AI consulting", "PWA development", "Progressive Web Apps", "business automation", "AI automation", "custom web apps", "small business technology consulting", "AI solutions for small business"]
+    },
+    "/products.html": {
+      "title": "Products & Services | Toastid Tech",
+      "description": "Explore Toastid Tech's AI-powered apps, Progressive Web Apps, business automation tools, and technology consulting services.",
+      "keywords": ["AI apps", "Progressive Web Apps", "PWA developer", "business automation tools", "AI business solutions", "custom web applications"]
+    },
+    "/resources.html": {
+      "title": "Resources & Blog | PWA, AI & Business Automation | Toastid Tech",
+      "description": "Practical guides about Progressive Web Apps, business audits, AI strategy, and business automation for small businesses and solopreneurs.",
+      "keywords": ["PWA blog", "Progressive Web App guide", "business automation blog", "AI for small business", "business audit", "AI strategy", "workflow automation"]
+    },
+    "/about.html": {
+      "title": "About Toastid Tech | AI & Technology Consulting",
+      "description": "Learn about Toastid Tech, a founder-built technology company focused on AI consulting, PWA development, automation, and practical digital solutions.",
+      "keywords": ["Toastid Tech", "AI technology consultant", "PWA consultant", "business technology consultant", "AI development company"]
+    },
+    "/contact.html": {
+      "title": "Contact Toastid Tech | AI Consulting & App Development",
+      "description": "Talk with Toastid Tech about AI consulting, custom PWA development, business audits, automation, or your next digital product.",
+      "keywords": ["contact AI consultant", "PWA development consultation", "AI business audit", "business automation consultant"]
+    }
+  }
+}
