@@ -1,7 +1,9 @@
 User-agent: *
+Allow: /
+
+# Keep private/non-public paths out of crawlers
 Disallow: /admin/
 Disallow: /private/
 Disallow: /staging/
-Allow: /
 
 Sitemap: https://toastidtech.com/sitemap.xml
