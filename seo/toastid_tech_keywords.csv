@@ -1,10 +1,25 @@
-Keyword,Category,Search Intent,Competition,Estimated Value / Priority,Target URL / Page
-custom pwa development for small business,PWA Development,Commercial / Transactional,Low,High,/services/pwa-development
-ai integration consulting services,AI Consulting,Commercial / B2B,Low-Medium,High,/services/ai-consulting
-progressive web app developer for hire,PWA Development,Transactional,Low,High,/portfolio
-ai powered marketing hub setup,Marketing Hubs (PulseMatrix),Commercial,Low,High,/products/pulsematrix
-wordpress pwa integration agency,WordPress & Hosting,Commercial,Low,Medium-High,/services/wordpress-pwa
-offline capable web app development,PWA Technical,Informational / Commercial,Low,Medium,/blog/pwa-offline-capabilities
-custom graphic design web app development,CanvasFlow,Commercial,Low,Medium,/products/canvasflow
-digital nutrition app development,PlateIQ,Commercial / Niche,Low,High,/products/plateiq
-ai consulting for digital agencies,AI Consulting,B2B,Low,High,/services/ai-consulting
+Keyword,Category,Search Intent,Competition,Priority,Target URL
+AI consulting for small business,AI Consulting,Commercial / B2B,Low,High,/products.html
+AI business automation consultant,Business Automation,Commercial / B2B,Low,High,/products.html
+AI integration consulting services,AI Consulting,Commercial / B2B,Low-Medium,High,/products.html
+business technology audit,Business Audits,Commercial / Informational,Low,High,/products.html
+small business technology audit,Business Audits,Commercial / Informational,Low,High,/resources.html
+business process automation,Automation,Commercial / Informational,Medium,High,/resources.html
+workflow automation for small business,Automation,Commercial,Low-Medium,High,/resources.html
+Progressive Web App development,PWA Development,Commercial,Medium,High,/products.html
+PWA development for small business,PWA Development,Commercial / Transactional,Low,High,/resources.html
+custom Progressive Web App developer,PWA Development,Transactional,Low,High,/products.html
+Progressive Web App consultant,PWA Development,Commercial,Low,High,/products.html
+offline capable web app development,PWA Technical,Informational / Commercial,Low,Medium,/resources.html
+PWA business app development,PWA Development,Commercial,Low-Medium,High,/products.html
+AI powered business tools,AI Solutions,Commercial,Low-Medium,High,/products.html
+AI solutions for small business,AI Solutions,Commercial,Medium,High,/products.html
+custom AI web app development,AI Development,Commercial / Transactional,Low-Medium,High,/products.html
+custom web app development for small business,Web App Development,Commercial,Medium,High,/products.html
+AI marketing automation,Marketing Automation,Commercial,Medium,High,/resources.html
+SOP automation,Automation,Commercial / Informational,Low,Medium-High,/resources.html
+standard operating procedure automation,Automation,Commercial / Informational,Low,Medium-High,/resources.html
+AI strategy for small business,AI Strategy,Informational / Commercial,Low-Medium,High,/resources.html
+AI implementation consulting,AI Consulting,Commercial,Low-Medium,High,/products.html
+AI productivity tools for business,AI Solutions,Commercial,Medium,Medium-High,/resources.html
+Toastid Tech,Brand,Branded,Low,High,/
