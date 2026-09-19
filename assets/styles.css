@@ -477,3 +477,11 @@
   #products .product-grid{gap:12px;}
   #products .product-card{width:100%;min-height:0;}
 }
+
+/* ===== GoFundMe video sizing ===== */
+.support-video-wrap{width:min(420px,100%);margin:22px auto 0;overflow:hidden;border-radius:14px;border:1px solid var(--border-strong);background:#000;}
+.support-video{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;aspect-ratio:9/16;background:#000;}
+@media(max-width:560px){
+  .support-video-wrap{width:min(320px,100%);margin:18px auto 0;}
+  .support-video{max-height:460px;}
+}
