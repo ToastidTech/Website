@@ -462,3 +462,19 @@
   .tilt-card::before{display:none;}
   .cta-btn.filled{transform:none !important;}
 }
+
+/* ===== App status divider: full-width separator between live and development ===== */
+.product-stage{width:100%;margin:0;padding:0;}
+.app-divider{width:100%;height:18px;margin:24px 0 24px;display:block;position:relative;}
+.app-divider::before{content:'';position:absolute;left:0;right:0;top:50%;width:100%;height:2px;background:linear-gradient(90deg,rgba(27,117,208,.15),#1b75d0 12%,#5aa9ff 50%,#1b75d0 88%,rgba(10,42,77,.2));box-shadow:0 0 9px rgba(30,136,229,.35);transform:translateY(-50%);}
+.app-divider::after{display:none;}
+.product-stage .stage-label{font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin:0 0 14px;text-align:left;}
+@media(max-width:560px){
+  .app-divider{height:14px;margin:18px 0 20px;}
+  .app-divider::before{height:2px;}
+  .product-stage .stage-label{font-size:.62rem;margin-bottom:10px;letter-spacing:.11em;}
+  #products .section-head{display:block;}
+  #products .section-head .cta-btn{margin-top:12px;width:100%;}
+  #products .product-grid{gap:12px;}
+  #products .product-card{width:100%;min-height:0;}
+}
