@@ -484,3 +484,10 @@
   .support-video-wrap{width:min(260px,78vw);max-width:260px;margin:18px auto 0;}
   .support-video{max-width:260px;max-height:410px;}
 }
+
+/* ===== FAQ sections (SEO + AI chatbot citations) ===== */
+.faq-list{max-width:860px;display:grid;gap:14px;}
+.faq-item{border:1px solid var(--border-strong,#23283b);border-radius:14px;padding:18px 22px;background:rgba(255,255,255,.02);}
+.faq-item h3{margin:0 0 8px;font-size:1.08rem;line-height:1.4;}
+.faq-item p{margin:0;color:var(--muted,#a7b0c6);line-height:1.7;}
+.faq-item a{color:#7db8ff;}

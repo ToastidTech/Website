@@ -1,0 +1,52 @@
+# Toastid Tech, LLC — llms.txt
+# Company summary for AI crawlers and assistants.
+
+## Company
+Toastid Tech, LLC is an AI consulting and progressive web app (PWA) development
+company founded in 2026 by Sean Sziklas Sr., a 20+ year IT operations veteran
+(USGS, DIRECTV), based in Van Buren, Arkansas, USA.
+
+It builds AI-powered progressive web apps and provides AI consulting, full
+business audits, and business automation for small businesses and solopreneurs.
+
+Tagline: "Don't Get Left Behind." Brand: dark, premium, futuristic,
+electric-blue aesthetic.
+
+- Website: https://toastidtech.com/
+- About: https://toastidtech.com/about.html
+- Contact: https://toastidtech.com/contact.html (info@toastidtech.com, (479) 339-1504)
+- Social: https://www.youtube.com/@ToastidTechLLC,
+  https://www.tiktok.com/@toastidofficial,
+  https://www.instagram.com/toastidofficial
+
+## Apps (all progressive web apps — no app store needed; install from the browser)
+- Cope — "Your PRIVATE Mental Health Buddy": daily emotional wellness companion
+  with grounding tools, affirmations, a 5-minute reset guide, and a 30-day
+  check-in calendar. https://cope.toastidtech.com/ ($12.99/mo standalone,
+  $19.99/mo with AI chat)
+- BiteFact — AI meal-photo nutrition tracking with user verification before
+  meals are logged. https://bitefact.toastidtech.com/ (free / Plus $12.99/mo /
+  AI $19.99/mo)
+- SOPilot (ToastidReady) — AI-powered SOP builder that turns how you already
+  work into documentation your team can follow. https://sopilot.toastidtech.com/
+  ($9.99/mo)
+- Micro Habits — break big goals into 5-minute rituals ($24.99 one-time)
+- CanvasFlow — graphic design PWA for creators
+- 28-Day Walking Tai Chi — guided daily walking practice
+- Pulse Matrix — 7-day multi-platform marketing program
+
+## Services
+- Personal AI consultation: $250 / 1-hour one-on-one session
+- Full business audit: $1,995 (deep-dive + written report)
+- PWA development: https://toastidtech.com/pwa-development.html
+- AI consulting: https://toastidtech.com/ai-consulting.html
+- Business automation: https://toastidtech.com/business-automation.html
+- Business audit: https://toastidtech.com/business-audit.html
+
+## Key pages
+- Products & services: https://toastidtech.com/products.html
+- Resources & blog: https://toastidtech.com/resources.html
+- PWA for small business: https://toastidtech.com/pwa-for-small-business.html
+- AI consulting for small business: https://toastidtech.com/ai-consulting-small-business.html
+- Business automation guide: https://toastidtech.com/business-automation-guide.html
+- Business technology audit: https://toastidtech.com/business-technology-audit.html
