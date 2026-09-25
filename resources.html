@@ -13,6 +13,18 @@
 <meta name="theme-color" content="#000000"><link rel="icon" href="assets/logos/icon-192.png"><link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/styles.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJXTN8EDT4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-DJXTN8EDT4');</script>
+<script>
+/* Toastid Tech: track app launch CTA clicks as GA4 key-event candidate */
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href*="toastidtech.com"]') : null;
+  if (!a) return;
+  try {
+    var m = a.href.match(/https?:\/\/([a-z0-9-]*)\.?toastidtech\.com/i);
+    var app = (m && m[1]) ? m[1] : 'main';
+    gtag('event', 'app_launch_click', { app: app, link_url: a.href });
+  } catch (_) {}
+});
+</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Toastid Tech Resources","url":"https://toastidtech.com/resources.html","description":"Practical guides on AI, Progressive Web Apps, business audits, and business automation.","isPartOf":{"@type":"WebSite","name":"Toastid Tech","url":"https://toastidtech.com"},"publisher":{"@type":"Organization","name":"Toastid Tech, LLC","url":"https://toastidtech.com"}}</script>
 <style>
 .resources-hero{padding-bottom:48px}.resources-hero p{max-width:760px;font-size:18px;line-height:1.75}.eyebrow2,.tag{font-family:'JetBrains Mono',monospace;color:#7bbcff;font-size:11px;letter-spacing:.1em;text-transform:uppercase}.intro-grid,.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.intro-grid{grid-template-columns:1.3fr .7fr;margin-bottom:45px}.intro-card,.resource-card{border:1px solid rgba(90,169,255,.17);border-radius:18px;background:rgba(255,255,255,.025);padding:27px}.intro-card:first-child{background:linear-gradient(135deg,rgba(90,169,255,.09),rgba(184,159,216,.04))}.intro-card h2,.resource-card h3{margin:7px 0 11px}.intro-card p,.resource-card p{color:rgba(255,255,255,.7);line-height:1.7}.topic-links{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.topic-links a{color:#dcecff;text-decoration:none;border:1px solid rgba(90,169,255,.22);border-radius:999px;padding:8px 12px;font-size:13px}.topic-links a:hover{background:rgba(90,169,255,.1);border-color:#5aa9ff}.resource-section{margin:45px 0}.resource-section h2{margin:6px 0 18px}.resource-card{min-height:245px;display:flex;flex-direction:column}.resource-card p{flex:1}.resource-card a{color:#bfa9e5;text-decoration:none;font-weight:700}.resource-card a:hover{color:#fff}.cta{margin:48px 0;padding:32px;border:1px solid rgba(184,159,216,.2);border-radius:18px;background:rgba(184,159,216,.05);display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{margin:5px 0}.cta p{margin:0;color:rgba(255,255,255,.7)}@media(max-width:850px){.intro-grid,.card-grid{grid-template-columns:1fr 1fr}.intro-grid{grid-template-columns:1fr}}@media(max-width:600px){.card-grid{grid-template-columns:1fr}.resources-hero p{font-size:16px}.intro-card,.resource-card{padding:22px}.cta{flex-direction:column;align-items:flex-start}}

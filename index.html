@@ -38,6 +38,18 @@
 </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DJXTN8EDT4"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DJXTN8EDT4');</script>
+<script>
+/* Toastid Tech: track app launch CTA clicks as GA4 key-event candidate */
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href*="toastidtech.com"]') : null;
+  if (!a) return;
+  try {
+    var m = a.href.match(/https?:\/\/([a-z0-9-]*)\.?toastidtech\.com/i);
+    var app = (m && m[1]) ? m[1] : 'main';
+    gtag('event', 'app_launch_click', { app: app, link_url: a.href });
+  } catch (_) {}
+});
+</script>
 </head>
 <body>
 <div class="bg-fx"></div><canvas id="particles"></canvas><div class="cursor-glow" id="cursorGlow"></div>

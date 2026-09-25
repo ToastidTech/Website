@@ -9,6 +9,18 @@
   gtag('js', new Date());
   gtag('config', 'G-DJXTN8EDT4');
 </script>
+<script>
+/* Toastid Tech: track app launch CTA clicks as GA4 key-event candidate */
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href*="toastidtech.com"]') : null;
+  if (!a) return;
+  try {
+    var m = a.href.match(/https?:\/\/([a-z0-9-]*)\.?toastidtech\.com/i);
+    var app = (m && m[1]) ? m[1] : 'main';
+    gtag('event', 'app_launch_click', { app: app, link_url: a.href });
+  } catch (_) {}
+});
+</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Consulting for Small Business | Toastid Tech</title>
 <meta name="description" content="Practical AI consulting for small businesses and solopreneurs. Find useful AI opportunities, avoid expensive distractions, and build a workable plan.">
