@@ -8,13 +8,13 @@
   "pages": {
     "/": {
       "title": "Toastid Tech, LLC | AI Consulting & PWA Development",
-      "description": "AI consulting, custom Progressive Web App development, business automation, and practical technology solutions for small businesses and solopreneurs.",
-      "keywords": ["AI consulting", "PWA development", "Progressive Web Apps", "business automation", "AI automation", "custom web apps", "small business technology consulting", "AI solutions for small business"]
+      "description": "AI consulting, custom Progressive Web App development, business automation, and practical technology solutions for small businesses and solopreneurs. Home of AuraTide, the AI horoscope and manifestation companion.",
+      "keywords": ["AI consulting", "PWA development", "Progressive Web Apps", "business automation", "AI automation", "custom web apps", "small business technology consulting", "AI solutions for small business", "AuraTide", "AI horoscope app", "SOPilot", "AI SOP builder", "SOP software", "PulseMatrix", "Pulse Matrix", "AI marketing tools"]
     },
     "/products.html": {
       "title": "Products & Services | Toastid Tech",
-      "description": "Explore Toastid Tech's AI-powered apps, Progressive Web Apps, business automation tools, and technology consulting services.",
-      "keywords": ["AI apps", "Progressive Web Apps", "PWA developer", "business automation tools", "AI business solutions", "custom web applications"]
+      "description": "Explore Toastid Tech's AI-powered apps — including AuraTide, the AI horoscope and manifestation companion — Progressive Web Apps, business automation tools, and technology consulting services.",
+      "keywords": ["AI apps", "Progressive Web Apps", "PWA developer", "business automation tools", "AI business solutions", "custom web applications", "AuraTide", "AI horoscope app", "manifestation app", "daily horoscope PWA", "SOPilot", "AI SOP builder", "SOP software for small business", "PulseMatrix", "Pulse Matrix", "AI marketing copy generator"]
     },
     "/resources.html": {
       "title": "Resources & Blog | PWA, AI & Business Automation | Toastid Tech",
