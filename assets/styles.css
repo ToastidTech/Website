@@ -478,14 +478,6 @@
   #products .product-card{width:100%;min-height:0;}
 }
 
-/* ===== GoFundMe video sizing ===== */
-.support-video-wrap{width:min(360px,100%);max-width:360px;margin:22px auto 0;overflow:hidden;border-radius:14px;border:1px solid var(--border-strong);background:#000;}
-.support-video{display:block;width:100%;height:auto;max-width:360px;max-height:500px;object-fit:contain;aspect-ratio:9/16;background:#000;}
-@media(max-width:560px){
-  .support-video-wrap{width:min(260px,78vw);max-width:260px;margin:18px auto 0;}
-  .support-video{max-width:260px;max-height:410px;}
-}
-
 /* ===== FAQ sections (SEO + AI chatbot citations) ===== */
 .faq-list{max-width:860px;display:grid;gap:14px;}
 .faq-item{border:1px solid var(--border-strong,#23283b);border-radius:14px;padding:18px 22px;background:rgba(255,255,255,.02);}
