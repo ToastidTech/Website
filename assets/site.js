@@ -158,6 +158,16 @@
     document.querySelectorAll('.tilt-card')
     .forEach(function(card){
 
+      card.addEventListener('mouseenter',function(){
+
+        /* The reveal-stagger entrance leaves a per-card transition-delay
+           on grid cards; that delay also lags every tilt transform, making
+           later cards feel dead. Once a card is hovered its entrance is
+           long done, so drop the delay for good. */
+        card.style.transitionDelay='0s';
+
+      });
+
       card.addEventListener('mousemove',function(e){
 
         var rect=card.getBoundingClientRect();
