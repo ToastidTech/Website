@@ -20,6 +20,14 @@ electric-blue aesthetic.
   https://www.instagram.com/toastidofficial
 
 ## Apps (all progressive web apps — no app store needed; install from the browser)
+- Ravuna — flagship AI receptionist. Answers your business line 24/7, books
+  appointments, and logs every call to your CRM, so no caller ever reaches
+  voicemail again. White-label for your business. https://tryravuna.com/
+  ($250/mo plus $100 setup; live demo line: (479) 339-1504)
+- Hestrel — consent-first estimating for home-service pros. Dictate the
+  walkthrough, capture signed consent before the mic opens, and hand every
+  customer a witnessed estimate packet. "Every estimate has a witness."
+  https://hestrel.toastidtech.com/ ($299 setup, $69.99/mo per account)
 - Cope — "Your PRIVATE Mental Health Buddy": daily emotional wellness companion
   with grounding tools, affirmations, a 5-minute reset guide, and a 30-day
   check-in calendar. https://cope.toastidtech.com/ ($12.99/mo standalone,
