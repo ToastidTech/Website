@@ -198,6 +198,23 @@
     width:min(440px, 96%);
     filter:drop-shadow(0 0 30px rgba(74,158,255,0.28));
   }
+  .hero-video{ flex-direction:column; gap:12px; }
+  .hero-visual video{
+    position:relative; z-index:1;
+    width:min(560px, 100%);
+    aspect-ratio:16/9;
+    border-radius:14px;
+    border:1px solid var(--border-strong);
+    box-shadow:0 14px 40px rgba(74,158,255,.15);
+    background:#000;
+  }
+  .hero-sound-btn{
+    position:relative; z-index:1;
+    background:transparent; color:var(--muted);
+    border:1px solid var(--border-strong); border-radius:999px;
+    padding:7px 16px; font-size:.85rem; cursor:pointer;
+  }
+  .hero-sound-btn:hover{ color:var(--text); border-color:var(--blue-bright); }
 
   /* FEATURE STRIP */
   .feature-strip{
