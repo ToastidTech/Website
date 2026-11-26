@@ -23,7 +23,7 @@ electric-blue aesthetic.
 - Ravuna — flagship AI receptionist. Answers your business line 24/7, books
   appointments, and logs every call to your CRM, so no caller ever reaches
   voicemail again. White-label for your business. https://tryravuna.com/
-  ($250/mo plus $100 setup; live demo line: (479) 339-1504)
+  (Essential $249/mo with 500 minutes, Professional $399/mo with 1,000 minutes, Elite $699/mo with 2,000 minutes, coming soon; $100 setup waived for the first five founding customers; extra minutes $0.40 each; live demo line: (479) 339-1504)
 - Hestrel — consent-first estimating for home-service pros. Dictate the
   walkthrough, capture signed consent before the mic opens, and hand every
   customer a witnessed estimate packet. "Every estimate has a witness."
@@ -58,3 +58,5 @@ electric-blue aesthetic.
 - AI consulting for small business: https://toastidtech.com/ai-consulting-small-business.html
 - Business automation guide: https://toastidtech.com/business-automation-guide.html
 - Business technology audit: https://toastidtech.com/business-technology-audit.html
+- Privacy Policy: https://toastidtech.com/privacy.html
+- Terms of Service: https://toastidtech.com/terms.html
